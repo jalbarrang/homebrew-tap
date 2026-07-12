@@ -12,10 +12,7 @@ cask "taskbarra" do
   app "Taskbarra.app"
 
   caveats <<~EOS
-    Taskbarra is ad-hoc signed. Install it without quarantine:
-      brew install --cask jalbarrang/tap/taskbarra --no-quarantine
-
-    If macOS still blocks it, run:
+    Taskbarra is ad-hoc signed. Clear its quarantine attribute before launching:
       xattr -dr com.apple.quarantine /Applications/Taskbarra.app
 
     Re-grant Accessibility permission after every update because the ad-hoc signature changes.
