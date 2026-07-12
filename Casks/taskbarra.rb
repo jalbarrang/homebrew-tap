@@ -4,10 +4,10 @@ cask "taskbarra" do
 
   url "https://github.com/jalbarrang/taskbarra/releases/download/v#{version}/Taskbarra-#{version}.dmg"
   name "Taskbarra"
-  desc "Windows-style per-window taskbar for macOS"
+  desc "Windows-style taskbar with one entry per window"
   homepage "https://github.com/jalbarrang/taskbarra"
 
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
 
   app "Taskbarra.app"
 
